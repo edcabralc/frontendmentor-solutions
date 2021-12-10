@@ -43,7 +43,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "content image";
     gap: 2.5rem;
-    max-width: 1440px;
+    max-width: 1108px;
     width: 100%;
     background-color: var(--dark-desaturated-blue);
     color: var(--main-paragraph);
