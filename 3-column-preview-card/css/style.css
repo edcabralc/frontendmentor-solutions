@@ -58,6 +58,7 @@ body {
 
 .card-item p {
     max-width: 23ch;
+
     color: var(--transparent-white);
     font-family: "Lexend Deca", sans-serif;
 }
