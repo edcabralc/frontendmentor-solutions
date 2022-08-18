@@ -1,0 +1,173 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat url("/images/pattern-background-desktop.svg")
+    var(--pale-blue);
+  background-size: contain;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 28px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+
+.order-container {
+  display: grid;
+  grid-template-rows: auto, 1fr;
+  background-color: #fff;
+  place-items: center;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.illustration-cover {
+  border-radius: 20px 20px 0 0;
+}
+
+.summary-container {
+  padding: 55px;
+  grid-area: "content";
+  text-align: center;
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.plan-details {
+  background-color: var(--very-pale-blue);
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  text-align: left;
+  border-radius: 12px;
+}
+
+.plan-details div {
+  display: grid;
+  grid-template-columns: auto, 1fr;
+}
+.plan-details h4,
+.plan-details p {
+  grid-column-start: 2;
+  margin-left: 20px;
+}
+
+.plan-details img {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.plan-details a {
+  justify-self: end;
+  color: var(--bright-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.plan-details a:hover {
+  color: hsl(242, 83%, 68%);
+}
+
+.proceed-btn {
+  background-color: var(--bright-blue);
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0px 20px 25px rgba(118, 108, 241, 0.2);
+}
+
+.proceed-btn:hover {
+  background-color: hsl(242, 83%, 68%);
+}
+
+.cancel-btn {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cancel-btn:hover {
+  color: var(--dark-blue);
+}
+
+@media (max-width: 600px) {
+  body {
+    background: no-repeat url("/images/pattern-background-mobile.svg")
+      var(--pale-blue);
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+  }
+
+  .order-container {
+    max-width: 330px;
+  }
+
+  .summary-container {
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .plan-details {
+    padding: 15px;
+  }
+
+  .plan-details a {
+    font-size: 13px;
+  }
+}
