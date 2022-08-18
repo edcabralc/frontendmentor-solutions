@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [click here to see](https://frontendmentor-solutions-m8x20mjik-edcabralc.vercel.app)
+- Live Site URL: [click here to see](https://frontendmentor-solutions-order-summary.vercel.app/)
 
 ## My process
 
